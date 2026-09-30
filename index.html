@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour-Of-Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        #food-title {
+            color: green;
+        }
+        .bold{
+            font-size: large;
+        }
+        #style{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tour of DOM </h1>
+    </header>
+    <main id="main-container">
+        <h1>Welcome to my DOM</h1>
+        <ul>
+            <li class="name-of-dom">Shafayet</li>
+            <li class="name-of-dom">Bonobash</li>
+            <li>Jalali Set</li>
+        </ul>
+        <section>
+            <h1 id="food-title">Food I love to eat</h1>
+            <li>Chicken</li>
+            <li>Mutton</li>
+            <li>Egg</li>
+            <li>Burger</li>
+            <li>Pizza</li>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos tempora mollitia ut!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere qui libero in nesciunt repudiandae!
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus error unde dolorum officiis similique
+            asperiores excepturi quas quo deserunt dolor?</p>
+        <section class="querySelectorAll" id="selectorAll">
+            <p><span>Lorem, ipsum dolor.</span></p>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ea!</span></p>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quod exercitationem soluta est quos
+                fugiat labore corrupti nesciunt veniam a?</span>
+        </section>
+        <section class="countries country" id="nameOfCountry">
+            <h3>Name of beatifull country</h3>
+            <li>Bangladesh</li>
+            <li>England</li>
+            <li>India</li>
+            <li>Nepal</li>
+            <li>Australia</li>
+        </section>
+        <script>
+            // console.log('hello from javascript!!!')
+            // console.log('hello bole chole gelo')
+            // const student = {
+            //     name: 'Abul mia',
+            //     id: 121,
+            //     study: function (subject) {
+            //         console.log('studying subject:', subject);
+            //     }
+
+            // }
+            // const liCollection = document.getElementsByTagName('li')
+            // console.log(liCollection)
+            // for (const li of liCollection) {
+            //     console.log(li.innerText)
+            // }
+            // const pCollection = document.getElementsByTagName('p')
+            // console.log(pCollection)
+            // for (const paragraph of pCollection) {
+            //     console.log(paragraph.innerHTML)
+            // }
+            // const foodHeading = document.getElementById('food-title')
+            // foodHeading.innerText = 'Food that makes me fat'
+            // console.log(foodHeading.innerText);
+            // const className = document.getElementsByClassName('name-of-dom');
+            // for (const name of className) {
+            //     console.log(name.innerText = 'Ankita paul')
+
+
+            // }
+            // const spanElements = document.querySelectorAll('#selectorAll p span')
+            // for(span of spanElements){
+            //     console.log(span)
+            // }
+            const countryElements = document.getElementById('nameOfCountry')
+            countryElements.style.backgroundColor = 'green';
+            countryElements.style.textAlign ='center';
+            countryElements.classList.add('bold')
+
+            // get-attribute related topic
+           const getAttribute= countryElements.getAttribute('class')
+           console.log(getAttribute);
+        //    set-attribute related topic
+        const setAttribute = countryElements.setAttribute('id','style');
+        console.log(setAttribute);
+
+
+
+        </script>
+    </main>
+    <script src="./js/hello.js"></script>
+    <script src="./js/appendChild.js"></script>
+</body>
+
+</html>
